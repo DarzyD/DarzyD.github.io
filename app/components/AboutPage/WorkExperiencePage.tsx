@@ -23,7 +23,7 @@ let jobs: Job[] = [
     {
         company: 'Siege Technologies',
         title: 'Software Engineer Intern',
-        date: 'June 2023 - August 2024'
+        date: 'June 2023 - August 2023'
     }
 ]
 
