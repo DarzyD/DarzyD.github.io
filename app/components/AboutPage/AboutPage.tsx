@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../styles/fonts.css';
-import TechStackPage from './TechStackPage';
 import Icons from '../Icons/Icons';
+import TechStackPage from './TechStackPage';
+import WorkExperiencePage from './WorkExperiencePage';
 const AboutPage = () => {
   return (
     <div className="mx-auto max-w-screen-lg px-3 py-6">
@@ -23,6 +24,7 @@ const AboutPage = () => {
           <img className="h-80 w-64" src="assets/images/profile.jpg" alt="Avatar image" loading="lazy"/>
         </div>
       </div>
+      <WorkExperiencePage/>
       <TechStackPage/>
     </div>
   )
