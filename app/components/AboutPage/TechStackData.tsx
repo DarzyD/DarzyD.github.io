@@ -31,10 +31,10 @@ export type Brand =
 	| 'Bash'
 	| 'Latex'
 	| 'Linux'
-	| 'Mongoose'
 	| 'Npm'
 	| 'Nodemon'
-	| 'Vite';
+	| 'Vite'
+	| 'Angular';
 
 export type Logo = {
 	[K in Brand]: {
@@ -108,6 +108,11 @@ export const techStack: Logo = {
 		imageURL: getImageFromDevicon('express'),
 		isTechTool: true
 	},
+	Angular: {
+		imageURL: getImageFromDevicon('angular'),
+		isTechTool: true
+	},
+
 	React: {
 		imageURL: getImageFromDevicon('react'),
 		isTechTool: true
@@ -182,10 +187,6 @@ export const techStack: Logo = {
 	},
 	Linux: {
 		imageURL: getImageFromDevicon('linux'),
-		isTechTool: true
-	},
-	Mongoose: {
-		imageURL: getImageFromDevicon('mongoose'),
 		isTechTool: true
 	},
 	Npm: {

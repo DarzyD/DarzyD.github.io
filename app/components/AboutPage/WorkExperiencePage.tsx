@@ -2,28 +2,33 @@ import React from 'react'
 type Job = {
     company: string,
     title: string,
-    date: string
+    date: string,
+    id: number
 }
 let jobs: Job[] = [
     {
         company: 'Headstarter AI',
         title: 'Software Engineer Fellow',
-        date: 'July 2024 - Present'
+        date: 'July 2024 - Present',
+        id: 0
     },
     {
         company: 'CVS',
         title: 'Shift Supervisor',
-        date: 'December 2023 - February 2024'
+        date: 'December 2023 - February 2024',
+        id: 1        
     },
     {
         company: 'UMass Auxiliary Enterprises',
         title: 'Food Preparation Assistant/ Cashier & Retail',
-        date: 'September 2023 - May 2024'
+        date: 'September 2023 - May 2024',
+        id: 2
     },
     {
         company: 'Siege Technologies',
         title: 'Software Engineer Intern',
-        date: 'June 2023 - August 2023'
+        date: 'June 2023 - August 2023',
+        id: 3
     }
 ]
 
@@ -33,7 +38,7 @@ const WorkExperiencePage = () => {
         <h1 className="text-xl font-bold mb-2"> Work Experience </h1>
         <ul className="list-disc pl-6 text-sm">
             {jobs.map((job) => (
-                <li className='mt-0.5'> <span className='underline font-normal'>{job.company}</span> ({job.date}): {job.title} </li>
+                <li className='mt-0.5' key={job.id}> <span className='underline font-normal'>{job.company}</span> ({job.date}): {job.title} </li>
             ))}
         </ul>
     </div>

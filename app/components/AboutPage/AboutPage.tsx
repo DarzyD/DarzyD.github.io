@@ -3,6 +3,8 @@ import '../../styles/fonts.css';
 import Icons from '../Icons/Icons';
 import TechStackPage from './TechStackPage';
 import WorkExperiencePage from './WorkExperiencePage';
+import Certifications from './Certifications';
+import TimeUpdatedHeader from './TimeUpdatedHeader';
 const AboutPage = () => {
   return (
     <div className="mx-auto max-w-screen-lg px-3 py-6">
@@ -24,8 +26,12 @@ const AboutPage = () => {
           <img className="h-80 w-64" src="assets/images/profile.jpg" alt="Avatar image" loading="lazy"/>
         </div>
       </div>
+
       <WorkExperiencePage/>
       <TechStackPage/>
+      <Certifications/>
+      <hr className="border-t border-sky-300 mt-4 " />
+      <TimeUpdatedHeader/>
     </div>
   )
 }

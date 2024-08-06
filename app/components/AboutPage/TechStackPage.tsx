@@ -1,19 +1,27 @@
 import React from 'react'
-import type {Brand} from './TechStackData'
+import Logo from './Logo'
 import { programmingLanguages, tools } from './TechStackData'
-type Size = 'small' | 'medium' | 'large';
-
-interface SizeProps {
-  [key: string]: string;
-}
-
-const width = { small: '18', medium: '30', large: '42' } as SizeProps;
-const height = { small: '20', medium: '30', large: '40' } as SizeProps;
 
 const TechStackPage = () => {
   return (
-    <div className="pt-2 rounded-lg">
-      
+    <div className="pt-4 rounded-lg">
+      <h1 className="text-xl font-bold mb-2">Technical skills</h1>
+      <div className="programming-language flex">
+        <div className="flex flex-wrapitems-center">
+          <p className="font-normal pr-1">Programming Languages:</p>
+          {programmingLanguages.map((language, index) => (
+              <Logo key={index} brand={language} />
+          ))}
+        </div>
+      </div>
+      <div className="mt-2 tech-stack flex">
+        <div className="flex flex-wrap items-center">
+          <p className="font-normal pr-1">Tools:</p>
+          {tools.map((language, index) => (
+              <Logo key={index} brand={language} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
