@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/fonts.css';
-import Icons from '../Icons/Icons';
+import '../styles/fonts.css';
+import Icons from '.././lib/components/Icons'
 import TechStackPage from './TechStackPage';
 import WorkExperiencePage from './WorkExperiencePage';
 import Certifications from './Certifications';

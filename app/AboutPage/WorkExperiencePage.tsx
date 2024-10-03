@@ -7,28 +7,34 @@ type Job = {
 }
 let jobs: Job[] = [
     {
+        company: 'Whole Foods Market',
+        title: 'In-Store Shopper',
+        date: 'September 2024 - Present',
+        id: 0
+    },
+    {
         company: 'Headstarter AI',
         title: 'Software Engineer Fellow',
-        date: 'July 2024 - Present',
-        id: 0
+        date: 'July 2024 - September 2024',
+        id: 1
     },
     {
         company: 'CVS',
         title: 'Shift Supervisor',
         date: 'December 2023 - February 2024',
-        id: 1        
+        id: 2        
     },
     {
         company: 'UMass Auxiliary Enterprises',
         title: 'Food Preparation Assistant/ Cashier & Retail',
         date: 'September 2023 - May 2024',
-        id: 2
+        id: 3
     },
     {
         company: 'Siege Technologies',
         title: 'Software Engineer Intern',
         date: 'June 2023 - August 2023',
-        id: 3
+        id: 4
     }
 ]
 

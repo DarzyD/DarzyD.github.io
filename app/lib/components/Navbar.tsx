@@ -13,9 +13,9 @@ export default function Navbar() {
           <Link href= {"/Projects"} className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
             Projects <FolderIcon className="w-4 h-4 ml-1" />
           </Link>
-          <Link href={"/Blog"} className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+          {/* <Link href={"/Blog"} className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
             Blog <BookOpenIcon className="w-4 h-4 ml-1" />
-          </Link>
+          </Link> */}
         </nav>
         <Link
           href="/Brian_Dang_Resume.pdf"

@@ -1,7 +1,7 @@
 // src/App.js
 import React from "react";
-import About from "./components/AboutPage/AboutPage";
-import Navbar from "./components/Navbar/Navbar";
+import About from "./AboutPage/AboutPage";
+import Navbar from "./lib/components/Navbar";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Icons from '../Icons/Icons'
+import Icons from '.././lib/components/Icons'
 const Certifications = () => {
   return (
     <div className="pt-4 rounded-lg">
