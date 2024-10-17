@@ -24,6 +24,7 @@ const AboutPage = () => {
         </div>
         <div className="shrink-0">
           <img className="h-80 w-64" src="assets/images/profile.jpg" alt="Avatar image" loading="lazy"/>
+          <p className="text-center text-xs">This is me at Osaka Castle in Japan!</p>
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from './Logo'
-import { programmingLanguages, tools } from './TechStackData'
+import Logo from '../lib/components/Logo'
+import { programmingLanguages, tools } from '../lib/components/TechStackData'
 
 const TechStackPage = () => {
   return (

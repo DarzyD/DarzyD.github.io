@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tile {
+    width: 1/4;
+    height: 1/4;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+#tileContainer {
+    margin: 10px 0 15px 0;
+    overflow: hidden;
+}
+
+#tileContainer ul {
+    text-align: left;
+}

@@ -27,6 +27,7 @@ export type Brand =
 	| 'IntelliJ'
 	| 'Jupyter'
 	| 'Postman'
+	| 'Playwright'
 	| 'Git'
 	| 'Bash'
 	| 'Latex'
@@ -42,6 +43,7 @@ export type Logo = {
 		websiteURL?: string;
 		isProgrammingLanguage?: boolean; // if the logo is related to programming language
 		isTechTool?: boolean; // if the logo is related to tech tools
+		isDark?: boolean; //to make sure logo is displayed in dark background
 	};
 };
 
@@ -106,7 +108,8 @@ export const techStack: Logo = {
 	},
 	Express: {
 		imageURL: getImageFromDevicon('express'),
-		isTechTool: true
+		isTechTool: true,
+		isDark: true
 	},
 	Angular: {
 		imageURL: getImageFromDevicon('angular'),
@@ -143,7 +146,8 @@ export const techStack: Logo = {
 	},
 	ChatGPT: {
 		imageURL: 'https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png',
-		isTechTool: true
+		isTechTool: true,
+		isDark: true
 	},
 	MySQL: {
 		imageURL: getImageFromDevicon('mysql'),
@@ -173,6 +177,10 @@ export const techStack: Logo = {
 		imageURL: getImageFromDevicon('postman'),
 		isTechTool: true
 	},
+	Playwright: {
+		imageURL: getImageFromDevicon('playwright'),
+		isTechTool: true
+	},
 	Git: {
 		imageURL: getImageFromDevicon('git'),
 		isTechTool: true
@@ -183,7 +191,8 @@ export const techStack: Logo = {
 	},
 	Latex: {
 		imageURL: getImageFromDevicon('latex'),
-		isTechTool: true
+		isTechTool: true,
+		isDark: true
 	},
 	Linux: {
 		imageURL: getImageFromDevicon('linux'),
